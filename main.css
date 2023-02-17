@@ -1,3 +1,14 @@
+/*core style*/
+@font-face {
+    font-family: 'Inter';
+    src: url(./fonts/Inter-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'Jost';
+    src: url(./fonts/Jost-Regular.ttf);
+}
+
 /*main header*/
 .main-header {
     height: 104px;
@@ -86,6 +97,7 @@
 .body-heading {
     background: linear-gradient(90deg, #00FFFF 0%, #4C98DE 33.93%, rgba(0, 133, 255, 0) 66.07%), url("./images/photo1.jpg");
     background-size: cover;
+    background-position: center;
     border-radius: 36px;
     height: 500px;
     margin-left: 2rem;
@@ -218,16 +230,74 @@
 
 .experience__statistic > div{
     width: 50%;
+    float: left;
 }
 
-.experience__image{
+.experience__image {
     display: inline-block;
     width: 100%;
-    box-sizing: border-box;    
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));  
 }
-
-
 
 .experience__body {
     display: inline-block;
+}
+
+.experience__title {
+    margin: 2.5rem 0 0 0;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 20px;
+    color: #0085FF;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+}
+
+.experience__subtitle {
+    margin: 0 0 1.5rem 0;
+    font-family: 'Jost';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 60px;
+    color: #1C1C1C;
+}
+
+.experience__text {
+    font-family: 'Inter';
+    font-style: normal;
+    margin: 0;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+    color: #585757;
+}
+
+.statistics > div {
+    width: 30%;
+}
+
+.statistic {
+    display: inline-block;
+}
+
+.statistic__number {
+    margin: 2rem 0 0 0;
+    font-family: 'Jost';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 48px;
+    color: #0085FF;
+}
+
+.statistic__text {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+    color: #585757;
 }
