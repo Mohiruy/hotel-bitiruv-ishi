@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mohiruy's hotel booking</title>
     <link rel="stylesheet" href="./main.css">
+    <link rel="stylesheet" href="./registration">
     <link rel="stylesheet" href="./fonts/">
     <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
@@ -38,10 +39,8 @@
                 <div class="login">
                     <a href="#" class="login__action">Log in</a>
                 </div>
-                <div class = "signup">
-                    <button type="button" class="btn btn-primary">
-                        Sign up
-                    </button>
+                <div class = "signup btn btn-primary">
+                    <a href="./registration.html">Sign up</a>
                 </div>
             </div>
         </header>
@@ -138,11 +137,11 @@
 
     <!--Body experience-->
     <div class="container-fluid">
-        <div class="experience__statistic">
-            <div class="experience__image">
+        <div class="row gx-5 experience__statistic">
+            <div class="col experience__image">
                 <img src="./images/experince-image.png" alt="image">
             </div>
-            <div class="experience__body">
+            <div class="col experience__body">
                 <p class="experience__title">
                     our experience
                 </p>
@@ -152,38 +151,34 @@
                 <p class="experience__text">
                     Since we first opened we have always prioritized the conveinence of our users by providing low prices and with a easy process.
                 </p>
-                <div class="statistics">
-                    <div class="statistic">
-                        <p class="statistic__number">
+                <div class="statistic">
+                    <div class="row">
+                        <p class="col statistic__number">
                             2
                         </p>
-                        <p class="statistic__text">
-                            Years <br> experience
-                        </p>
-                    </div>
-                    <div class="statistic">
-                        <p class="statistic__number">
+                        <p class="col statistic__number">
                             110+
                         </p>
-                        <p class="statistic__text">
-                            Destination <br> collobaration
-                        </p>
-                    </div>
-                    <div class="statistic">
-                        <p class="statistic__number">
+                        <p class="col statistic__number">
                             50K+
                         </p>
-                        <p class="statistic__text">
+                    </div>
+                    <div class="row">
+                        <p class="col statistic__text">
+                            Years <br> experience
+                        </p>
+                        <p class="col statistic__text">
+                            Destination <br> collobaration
+                        </p>
+                        <p class="col statistic__text">
                             Happy <br> customer
                         </p>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-    <div class="container-fluid">       
-        <div class="experience__comment">
-            <div class="experience__body">
+        <div class="row gx-5 experience__statistic">
+            <div class="col">
                 <p class="experience__title">
                     What they say
                 </p>
@@ -201,7 +196,7 @@
                 <i class="fa-solid fa-star star"></i>
                 <i class="fa-solid fa-star star"></i>
             </div>   
-            <div class="experience__images">
+            <div class="col experience__image">
                 <div class="experience__image1">
                     <img src="./images/experience_1.png" alt="image">
                 </div>
@@ -210,6 +205,82 @@
                 </div>
                 <div class="experience__image3">
                     <img src="./images/experience_3.png" alt="image">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Get started-->
+    <div class="container-fluid">
+        <div class="get-started">
+            <p class="started__title">
+                Prepare yourself & Let’s explore <br> the beauty of the Uzbekistan
+            </p>
+            <p class="started__subtitle">
+                We have many special offers especially for you
+            </p>
+            <p class = "started__button">
+                <button type="button" class="btn btn-primary rounded-pill">
+                    Get started
+                </button>
+            </p>
+        </div>
+    </div>
+
+    <!--Footer-->
+    <div class="container-fluid">
+        <div class="footer">
+            <div class="row">
+                <div class="col-4">
+                    <p class="footer__title">
+                        <a href="#">Mohiruy’s Hotel Booking</a>
+                    </p>
+                    <p class="footer__subtitle">We always make our customer <br> happy by providing as many <br> choices as possible</p>
+                    <ul class="socials">
+                        <a href="https://www.instagram.com/" class="social">
+                            <i class="fa-brands fa-square-instagram"></i>
+                        </a>
+                        <a href="#" class="social">
+                            <i class="fa-brands fa-square-facebook"></i>
+                        </a>
+                        <a href="#" class="social">
+                            <i class="fa-brands fa-twitter"></i>
+                        </a>
+                        <a href="#" class="social">
+                            <i class="fa-brands fa-telegram"></i>
+                        </a>
+                    </ul>
+                </div>
+                <div class="col">
+                    <p class="row footer__title">About</p>
+                    <a href="#" class="row footer__subtitle ">About us</a>
+                    <a href="#" class="row footer__subtitle">Features</a>
+                    <a href="#" class="row footer__subtitle">News</a>
+                    <a href="#" class="row footer__subtitle">Site Map</a>
+                </div>
+                <div class="col">
+                    <p class="row footer__title">Company</p>
+                    <a href="#" class="row footer__subtitle">Why we?</a>
+                    <a href="#" class="row footer__subtitle">Partner with us</a>
+                    <a href="#" class="row footer__subtitle">FAQ</a>
+                    <a href="#" class="row footer__subtitle">Blog</a>
+                </div>
+                <div class="col">
+                    <p class="row footer__title">Support</p>
+                    <a href="#" class="row footer__subtitle">Account</a>
+                    <a href="#" class="row footer__subtitle">Support center</a>
+                    <a href="#" class="row footer__subtitle">Feedback</a>
+                    <a href="#" class="row footer__subtitle">Accessibility</a>
+                </div>
+                <div class="col about">
+                    <p class="row footer__title">Get in touch</p>
+                    <p class="row footer__subtitle1">Question or feedback? <br>We'd love to hear from you</p>
+                    <div class="email input-group mb-3">
+                        <input type="email" class="form-control" placeholder="Email address" aria-label="Recipient's username" aria-describedby="button-addon2">
+                        <button class="btn btn btn-primary" type="button" id="button-addon2">
+                            <i class="fa-solid fa-envelope"></i>
+                        </button>
+                      </div>                      
                 </div>
             </div>
         </div>
