@@ -158,6 +158,7 @@
 }
 
 .recom-subtitle {
+    display: inline-block;
     font-family: 'Jost';
     font-style: normal;
     font-weight: 600;
@@ -167,12 +168,65 @@
     margin-bottom: 2rem;
 }
 
-.destination {
+#wrapper {
+    width: 100%;
+    max-width: 1349px;
+    position: relative;
+  }
+  
+#carousel {
+    width: 1349px;
+    overflow: auto;
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+  }
+  
+#carousel::-webkit-scrollbar {
+    height: 0;
+  }
+  
+#prev, #next {
     display: inline-block;
-    padding-right: 2rem;
+    padding: 16px;
+    gap: 10px;
+    width: 56px;
+    height: 56px;
+    display: inline-block;
+    border-radius: 28px;
+    border: none;
+    outline: 0;
+    cursor: pointer;
 }
 
-.destination img{
+#prev {
+    margin-left: 700px;
+    background : #969696;
+}
+
+#next {
+    background :#969696;
+}
+
+#prev:hover, #next:hover {
+    background: #0085FF;
+}
+  
+#content {
+    display: grid;
+    grid-gap: 16px;
+    grid-auto-flow: column;
+    margin: auto;
+    box-sizing: border-box;
+  }
+
+#destination {
+    display: inline-block;
+    padding-right: 2rem;
+    width: 400px;
+    height: 524px;
+}
+
+#destination img{
     width: 100%;
 }
 
@@ -306,7 +360,7 @@
 
 .experience__image1, .experience__image2, .experience__image3{
     position:absolute;
-    width: 350px;
+    width: 200px;
     height: 300px;
     border-radius: 36px;
 }
