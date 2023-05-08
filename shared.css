@@ -1,0 +1,95 @@
+@font-face {
+    font-family: 'Inter';
+    src: url(./fonts/Inter-Regular.ttf);
+}
+
+@font-face {
+    font-family: 'Jost';
+    src: url(./fonts/Jost-Regular.ttf);
+}
+    
+/*main header*/
+.main-header {
+    height: 104px;
+    background-color: white;
+    margin: 0;
+    padding: 2rem;
+
+}
+
+.main-navigation {
+    display: inline-block;
+    text-align: start;
+}
+
+.main-navigation__items {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+}
+
+.main-navigation__item {
+    display: inline-block;
+    margin: 1rem;
+}
+
+.main-navigation__item a:hover {
+    color: #0085FF;
+}
+
+.main-navigation__item a{
+    text-decoration: none;
+    color: #1C1C1C;
+    font-family: 'Jost';
+    font-style: normal;
+}
+
+.main-navigation__title {
+    text-align: center;
+    display: inline-block;
+    height: 100%;
+    font-family: 'Jost';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 32px;
+    color: #1C1C1C;
+}
+
+.registration {
+    display: inline-block;
+    height: 100%;
+    text-align: end;
+}
+
+.login {
+    display: inline-block;
+    font-family: 'Jost';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    padding-right: 1rem;
+    
+}
+
+.login a{
+    text-decoration: none;
+    color: #1C1C1C;
+}
+
+.login a:hover {
+    color: #0085FF;;
+}
+
+.signup {
+    display: inline-block;
+    padding-right: 1rem;
+}
+
+.signup a{
+    text-decoration: none;
+    color: #FFFFFF;
+}
+

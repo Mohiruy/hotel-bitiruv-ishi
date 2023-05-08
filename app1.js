@@ -1,35 +1,13 @@
-
-//photo
-
-const gap = 16;
-
-const carousel = document.getElementById("carousel"),
-  destination = document.getElementById("destination"),
-  next = document.getElementById("next"),
-  prev = document.getElementById("prev");
-
-next.addEventListener("click", e => {
-  carousel.scrollBy(width + gap, 0);  
-});
-prev.addEventListener("click", e => {
-  carousel.scrollBy(-(width + gap), 0);
-});
-
-let width = destination.offsetWidth;
-window.addEventListener("resize", e => (width = destination.offsetWidth));
-
-
-//Search
 $(function() {
-  $('input[name="daterange"]').daterangepicker({
-    opens: 'left'
-  }, function(start, end, label) {
-    console.log("A new date selection was made: " + start.format('YYYY-MM-DD') + ' to ' + end.format('YYYY-MM-DD'));
+    $('input[name="daterange"]').daterangepicker({
+      opens: 'left'
+    }, function(start, end, label) {
+      console.log("A new date selection was made: " + start.format('YYYY-MM-DD') + ' to ' + end.format('YYYY-MM-DD'));
+    });
   });
-});
 
-//dropdown
-const optionMenu = document.querySelector("#select-menu1"),
+
+  const optionMenu = document.querySelector("#select-menu1"),
   selectBtn = optionMenu.querySelector("#select-btn1"),
   options = optionMenu.querySelectorAll("#option1"),
   sBtn_text = optionMenu.querySelector("#sBtn-text1");
@@ -46,8 +24,6 @@ options.forEach((option) => {
     optionMenu.classList.remove("active");
   });
 });
-
-
 
 const optionMenu2 = document.querySelector("#select-menu2"),
   selectBtn2 = optionMenu2.querySelector("#select-btn2"),

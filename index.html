@@ -8,16 +8,19 @@
     <link rel="stylesheet" href="./main.css">
     <link rel="stylesheet" href="./registration">
     <link rel="stylesheet" href="./fonts/">
+    <link rel="stylesheet" href="./shared.css">
     <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
     <!--Header section-->
     <div class="container-fluid">
-        <header class="main-header">
-            <div class="main-navigation">
+        <header class="main-header row">
+            <div class="main-navigation col">
                 <ul class="main-navigation__items">
                     <li class="main-navigation__item">
                         <a class="item1" href="#">About</a>
@@ -31,11 +34,11 @@
                 </ul>
             </div>
 
-            <div class="main-navigation__title">
+            <div class="main-navigation__title col">
                 <h2 class="navigation-title__name">Mohiruy's hotel booking</h2>
             </div>
 
-            <div class="registration">
+            <div class="registration col">
                 <div class="login">
                     <a href="#" class="login__action">Log in</a>
                 </div>
@@ -48,16 +51,96 @@
 
     <!--Body heading-->
     <div class="container-fluid">
-        <div class="body-heading">     
+        <div class="body-heading d-flex align-items-center">     
             <div class="heading-title">
-                <p class="title-1">
+                <p class="title-1 d-flex justify-content-end">
                     Enjoy your tour with a suitable hotel for you and for your family
                 </p>
                 <p class="title-2">
                     We provide the best choices for you, just search here
                 </p>
             </div>
-            <div class="search-section">   
+        </div>
+        <div class=" d-flex justify-content-center">
+            <div class="search d-flex align-items-center">
+                <div class="col-3">
+                    <div class="select-menu row" id="select-menu1">
+                        <div class="col-1 icon d-flex align-items-center">
+                            <i class="fa-sharp fa-solid fa-location-dot"></i>
+                        </div>
+                        <div class="col">
+                            <div class="select-btn" id="select-btn1">
+                                <span class="sBtn-title">Location</span>
+                                <i class="fa-solid fa-chevron-down"></i>
+                            </div>
+        
+                            <div class="select-btn" id="select-btn1">
+                                <span class="sBtn-text" id="sBtn-text1"></span>
+                            </div>
+                            
+                            <ul class="options">
+                                <li class="option" id="option1">
+                                <span class="option-text" id="option-text1">Navai</span>
+                                </li>
+                                <li class="option" id="option1">
+                                <span class="option-text" id="option-text1">Tashkent</span>
+                                </li>
+                                <li class="option" id="option1">
+                                <span class="option-text" id="option-text1">Samarqand</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <div class="row">
+                        <div class="col-1 icon d-flex align-items-center">
+                            <i class="fa-regular fa-calendar-days"></i>
+                        </div>
+                        <div class="col">
+                            <form autocomplete="off">
+                                <div class="col-xl-5 col-lg-6 col-11 px-1">
+                                    <div class="input-group input-daterange date_in">
+                                        <label class="sBtn-title">Date:</label>
+                                        <input type="text" name="daterange" value="" />
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="row">
+                        <div class="col-1 icon d-flex align-items-center">
+                            <i class="fa-solid fa-bed"></i>
+                        </div>
+                        <div class="select-menu col" id="select-menu2">
+                            <div class="select-btn" id="select-btn2">
+                                <span class="sBtn-title">Guests</span>
+                                <i class="fa-solid fa-chevron-down"></i>
+                            </div>
+        
+                            <div class="select-btn" id="select-btn2">
+                                <span class="sBtn-text" id="sBtn-text2"></span>
+                            </div>
+                            
+                            <ul class="options">
+                                <li class="option" id="option2">
+                                <span class="option-text" id="option-text2">1</span>
+                                </li>
+                                <li class="option" id="option2">
+                                <span class="option-text" id="option-text2">2</span>
+                                </li>
+                                <li class="option" id="option2">
+                                <span class="option-text" id="option-text2">3</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <form class="col-1 d-flex" role="search">
+                    <button class="search-button" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+                </form>
             </div>
         </div>
     </div>
@@ -68,33 +151,36 @@
             <p class="recom-title">
                 Top destinations
             </p>
-            <p class="recom-subtitle">
-                Explore top destinations
-            </p>
-            <button id="prev">
-                <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                >
-                <path fill="none" d="M0 0h24v24H0V0z" />
-                <path d="M15.61 7.41L14.2 6l-6 6 6 6 1.41-1.41L11.03 12l4.58-4.59z" />
-                </svg>
-            </button>
-            <button id="next">
-                <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                >
-                <path fill="none" d="M0 0h24v24H0V0z" />
-                <path d="M10.02 6L8.61 7.41 13.19 12l-4.58 4.59L10.02 18l6-6-6-6z" />
-                </svg>
-            </button>
+            <div class="row">
+                <p class="col recom-subtitle">
+                    Explore top destinations
+                </p>
+                <div class="col next-prev">
+                    <button id="prev">
+                        <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        >
+                        <path fill="none" d="M0 0h24v24H0V0z" />
+                        <path d="M15.61 7.41L14.2 6l-6 6 6 6 1.41-1.41L11.03 12l4.58-4.59z" />
+                        </svg>
+                    </button>
+                    <button id="next">
+                        <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        >
+                        <path fill="none" d="M0 0h24v24H0V0z" />
+                        <path d="M10.02 6L8.61 7.41 13.19 12l-4.58 4.59L10.02 18l6-6-6-6z" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
             <div id="wrapper">
-                
                 <div id="carousel">
                     <div id="content">
                         <div id="destination">
@@ -217,6 +303,66 @@
                                 </p>
                             </div>
                         </div>
+                        <div id="destination">
+                            <img src="./images/destination.png" alt="photo">
+                            <p class="des-title">
+                                Hotel with a cool brand
+                            </p>
+                            <p class="des-subtitle">
+                                Tashkent, Uzbekistan
+                            </p>
+                            <div class="rate">
+                                <div class="gr">
+                                    <i class="fa-solid fa-star star"></i>
+                                    <p class="rate__number">
+                                        4.8
+                                    </p>
+                                </div>
+                                <p class="review">
+                                    2.4k Reviews
+                                </p>
+                            </div>
+                        </div>
+                        <div id="destination">
+                            <img src="./images/destination.png" alt="photo">
+                            <p class="des-title">
+                                Hotel with a cool brand
+                            </p>
+                            <p class="des-subtitle">
+                                Tashkent, Uzbekistan
+                            </p>
+                            <div class="rate">
+                                <div class="gr">
+                                    <i class="fa-solid fa-star star"></i>
+                                    <p class="rate__number">
+                                        4.8
+                                    </p>
+                                </div>
+                                <p class="review">
+                                    2.4k Reviews
+                                </p>
+                            </div>
+                        </div>
+                        <div id="destination">
+                            <img src="./images/destination.png" alt="photo">
+                            <p class="des-title">
+                                Hotel with a cool brand
+                            </p>
+                            <p class="des-subtitle">
+                                Tashkent, Uzbekistan
+                            </p>
+                            <div class="rate">
+                                <div class="gr">
+                                    <i class="fa-solid fa-star star"></i>
+                                    <p class="rate__number">
+                                        4.8
+                                    </p>
+                                </div>
+                                <p class="review">
+                                    2.4k Reviews
+                                </p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -328,7 +474,7 @@
                         <a href="#">Mohiruy’s Hotel Booking</a>
                     </p>
                     <p class="footer__subtitle">We always make our customer <br> happy by providing as many <br> choices as possible</p>
-                    <div class="socials">
+                    <ul class="socials">
                         <a href="https://www.instagram.com/" class="social">
                             <i class="fa-brands fa-square-instagram"></i>
                         </a>
@@ -341,7 +487,7 @@
                         <a href="#" class="social">
                             <i class="fa-brands fa-telegram"></i>
                         </a>
-                    </div>
+                    </ul>
                 </div>
                 <div class="col">
                     <p class="row footer__title">About</p>
@@ -378,5 +524,12 @@
         </div>
     </div>
 </body>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.min.js" integrity="sha384-heAjqF+bCxXpCWLa6Zhcp4fu20XoNIA98ecBC1YkdXhszjoejr5y9Q77hIrv8R9i" crossorigin="anonymous"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/jquery/latest/jquery.min.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
+
 <script src="app.js"></script>
+
 </html>

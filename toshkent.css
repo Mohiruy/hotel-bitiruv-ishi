@@ -1,0 +1,78 @@
+@font-face {
+    font-family: 'Abhaya Libre ExtraBold';
+    src: url(./fonts/AbhayaLibre-ExtraBold.ttf);
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url(./fonts/Inter-Regular.ttf);
+}
+
+.section1{
+    margin-bottom: 2rem;
+}
+
+.cards{
+    width: 90%;
+    height: 520px;
+    background: rgba(100, 196, 250, 0.2);
+    border: 1px solid #FFFFFF;
+    border-radius: 54px;
+}
+
+.cards img{
+    width: 222px;
+    height: 195px;
+    padding-top: 2rem;
+}
+
+.line{
+    width: 440px;
+    height: 0px;
+    border: 1px solid #000000;
+    margin-bottom: 2rem;
+}
+
+.hotel-name{
+    font-family: 'Abhaya Libre ExtraBold';
+    font-style: normal;
+    font-weight: 800;
+    font-size: 50px;
+    line-height: 59px;
+    text-align: center;
+    
+    color: #1C1E1F;
+}
+
+.line1 {
+    width: 0px;
+    height: 130px;
+    border: 1px solid #000000;
+}
+
+.qualities{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    color: #000000;
+    margin-bottom: 1rem ;
+}
+
+.qualities p{
+    margin: 0;
+    padding: 4px;
+}
+
+.amount{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 25px;
+    
+    color: #000000;
+    
+    mix-blend-mode: darken;
+}

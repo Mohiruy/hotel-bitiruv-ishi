@@ -1,0 +1,213 @@
+.forms{
+    width: 95%;
+    height: 85vh;
+    background: linear-gradient(90deg, #02EDED 0%, rgba(85, 255, 255, 0.86) 33.93%, rgba(0, 133, 255, 0) 80.73%), url(./images/photo1.jpg);
+    background-size: cover;
+    background-position: center;
+    border-radius: 36px;
+}
+
+.title{
+    font-family: 'Jost';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 43px;
+    text-align: center;
+    color: #1C1C1C;
+    padding-top: 1rem;
+    margin: 0;
+}
+.form-title{
+    font-family: 'Jost';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 29px;
+    text-align: right;
+    color: #1C1C1C;
+    padding: 0.6rem;
+}
+
+.line{
+    width: 4px;
+    height: 490px; 
+    background: linear-gradient(0deg, #FFFFFF, #FFFFFF), linear-gradient(0deg, #FFFFFF, #FFFFFF), linear-gradient(0deg, #FFFFFF, #FFFFFF), #FFFFFF;
+    border-radius: 10px;
+    
+}
+
+.form-area{
+    padding: 0.5rem;
+}
+
+.form-area input{
+    width: 50%;
+    height: 47px;
+    background: linear-gradient(0deg, #FFFFFF, #FFFFFF), linear-gradient(0deg, #FFFFFF, #FFFFFF), linear-gradient(0deg, #FFFFFF, #FFFFFF), #FFFFFF;
+    border-radius: 10px;
+    border: none;
+}
+
+* {
+    font-family: 'Inter';
+    font-style: normal;
+  }
+
+  .select-menu{
+    position: relative;
+    padding: 0.5rem;
+  }
+
+.icon{
+    color: #0085FF;
+    font-size: 1srem;
+}
+
+
+.select-menu .select-btn {
+    position: relative;
+    background: none;
+    padding: 7px;
+    font-family: 'Jost';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    align-items: center;
+    cursor: pointer;
+    justify-content: space-between;
+    width: 50%;
+    height: 47px;
+    background: linear-gradient(0deg, #FFFFFF, #FFFFFF), linear-gradient(0deg, #FFFFFF, #FFFFFF), linear-gradient(0deg, #FFFFFF, #FFFFFF), #FFFFFF;
+    border-radius: 10px;
+}
+
+.sBtn-title{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 20px;
+    color: #585757;
+}
+
+.select-menu .sBtn-text{
+    font-family: 'Jost';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    color: #1C1C1C;
+}
+
+.select-menu .options {
+    position: absolute;
+    width: 300px;
+    overflow-y: auto;
+    max-height: 295px;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 8px;
+    background: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    animation-name: fadeInDown;
+    -webkit-animation-name: fadeInDown;
+    animation-duration: 0.35s;
+    animation-fill-mode: both;
+    -webkit-animation-duration: 0.35s;
+    -webkit-animation-fill-mode: both;
+}
+
+.dropup{
+    bottom: 100%;
+}
+
+.select-menu .options .option {
+    display: flex;
+    height: 55px;
+    cursor: pointer;
+    padding: 0 16px;
+    border-radius: 8px;
+    align-items: center;
+    background: #fff;
+}
+  .select-menu .options .option:hover {
+    background: #f2f2f2;
+  }
+  .select-menu .options .option i {
+    font-size: 25px;
+    margin-right: 12px;
+  }
+  .select-menu .options .option .option-text {
+    font-family: 'Inter';
+    font-style: normal;
+    font-size: 15px;
+    color: #333;
+  }
+  
+  .select-btn i {
+    font-size: 13px;
+    transition: 0.3s;
+    margin-left: 0.5rem;
+  }
+  
+  .select-menu.active .select-btn i {
+    transform: rotate(-180deg);
+  }
+  .select-menu.active .options {
+    display: block;
+    opacity: 0;
+    z-index: 10;
+    animation-name: fadeInUp;
+    -webkit-animation-name: fadeInUp;
+    animation-duration: 0.4s;
+    animation-fill-mode: both;
+    -webkit-animation-duration: 0.4s;
+    -webkit-animation-fill-mode: both;
+  }
+  
+  @keyframes fadeInUp {
+    from {
+      transform: translate3d(0, 30px, 0);
+    }
+    to {
+      transform: translate3d(0, 0, 0);
+      opacity: 1;
+    }
+  }
+  @keyframes fadeInDown {
+    from {
+      transform: translate3d(0, 0, 0);
+      opacity: 1;
+    }
+    to {
+      transform: translate3d(0, 20px, 0);
+      opacity: 0;
+    }
+  }
+
+
+.description{
+    padding: 0.5rem;
+}
+
+.description textarea{
+    width: 50%;
+    height: 70px;
+    background: linear-gradient(0deg, #FFFFFF, #FFFFFF), linear-gradient(0deg, #FFFFFF, #FFFFFF), linear-gradient(0deg, #FFFFFF, #FFFFFF), #FFFFFF;
+    border-radius: 10px;
+    border: none;
+}
+
+.description textarea:focus{
+    border-color: #0085FF;
+}
+
+.sign{
+    width: 20%;
+    height: 47px;
+    background: #0085FF;
+    border-radius: 10px;
+    border: none;
+}
